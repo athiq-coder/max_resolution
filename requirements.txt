@@ -1,0 +1,8 @@
+streamlit
+pydaisi
+tensorflow
+scipy
+pillow
+imageio
+scikit-image
+Image
