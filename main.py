@@ -144,3 +144,6 @@ def run():
 
     st.button("Execute", on_click=process(image_file_buffer))
 
+if __name__ == "__main__":
+    run()
+
