@@ -127,10 +127,8 @@ def process(image_buffer):
 
         st.markdown(download_button(image,f"your_output_file{output_extension}", "Click me to download!!!", True), unsafe_allow_html=True)
 
-
-def run():
+if __name__ == "__main__":
     tf.app.run()
-
     st.set_page_config(layout = "wide")
     st.title("Low Resolution Image to High Resolution Image")
     image_file_buffer = st.file_uploader("Upload low resolution image", type=["jpg", "jpeg", 'png'])
@@ -143,7 +141,4 @@ def run():
         )
 
     st.button("Execute", on_click=process(image_file_buffer))
-
-if __name__ == "__main__":
-    run()
 
